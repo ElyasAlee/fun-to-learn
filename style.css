@@ -1,7 +1,7 @@
 .container
 {
     height: 100px;
-    background-color: rgba(6, 89, 245, 0.575);
+    background-color: rgba(132, 165, 226, 0.575);
     display: flex;
 }
 .background{
@@ -82,6 +82,7 @@
     height: 43px;
     width: 151px;
     margin: 7px 0px 7px 133px;
+    cursor: pointer;
 }
 img {
     width: 82%;
