@@ -66,10 +66,12 @@
  .footer{
     padding: 2px 16px;
 }
-.txt a{
+.txt span{
     text-align: center;
     font-size: 35px;
     color: white;
+    cursor: pointer;
+    
 }
 .form{
     text-align: center;
@@ -97,6 +99,53 @@ margin-top: 10px;
 .item-2{
 	animation-name: anim-2;
 }
+
+
+/* result Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.result {
+    animation: wiggle 2s linear infinite;
+    position: absolute;
+    left: calc(76% - 5em);
+    top: calc(100% - 1em);
+    height: 68px;
+    padding-left: 39px;
+    padding-right: 39px;
+    background: #444;
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border: 3px solid rgb(185, 185, 185);
+    border-radius: 12px;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 48px;
+    transform-origin: 50% 5em;
+}
+
+
 .timer{
     text-align: center;
     font-size: 35px;
@@ -134,7 +183,7 @@ margin-top: 10px;
             <!-- questions -->
             <section>
                 <div class="column">
-                    <div class="card-body">
+                    <div id="question1" class="card-body">
                         <div>
                             <div class="footer">
                             </div>
@@ -142,10 +191,10 @@ margin-top: 10px;
                         </div>
                         <h3 style="color: black; text-align: center; font-size: 30px;">what is the name of given image?</h3>
                         <div class="txt">
-                        <a class="btn2" href="#">dog </a>
-                        <a class="btn2" href="#">dog </a>
-                        <a class="btn2" href="#">Elephent </a>
-                        <a class="btn2" href="#">goat </a>
+                        <span class="btn2" id="dog" href="#" js-option >dog </span>
+                        <span class="btn2" id="cat" href="#" js-option>cat </span>
+                        <span class="btn2" id="elephent" href="#" js-option> Elephent </span>
+                        <span class="btn2" id="goat" href="#" js-option>goat </span>
                         </div>
                     </div>
                     </div>
