@@ -1,45 +1,14 @@
-.container
-{
-    height: 100px;
-    background-color: rgba(132, 165, 226, 0.575);
-    display: flex;
-}
+
 .background{
     background-image:  url('asset/bg.png');
     height: 800px;
     /* opacity: 0.2; */
 }
-.logo
-{
-    display: flex;
-    height: 70px;
-    padding: 16px;
-    border-radius: 50%;
-}
 .logo{
     width: 50%;
 }
-.pages
-{
-    display: flex;
-    margin-top: 33px;
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: 315px;
-    letter-spacing: 2px;   
-}
-.nav_link
-{
-    color: white;
-    font-size: 15px;
-    font-family: Arial
-}
-.title{
-    font-size: medium;
-    font-size: 15px;
-    font-size: 35px;
-    color: rgb(0, 0, 0);
-}
+
+
 .txt{
     color: black;
     font-size: 20px;
